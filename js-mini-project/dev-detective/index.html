@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+
+            <header class="heading">
+                <h1 class="headingContent">DevDetective</h1>
+                <div class="mode">Dark Mode</div>
+            </header>
+
+            <div class="search-tab">
+
+                <form class="search-section">
+                    <input class="input-class" type="text" placeholder="Enter a Github username..." >
+                    <p class="no-results">No search results</p>
+                    <button class="btn">Search</button>
+                </form>
+
+            </div>
+
+            <div class="loading-class">
+                <img src="./assets/loading.gif" alt="" height="300px" width="300px">
+                <p style="color: green; font-weight: bold; font-size: large;">Loading...</p>
+            </div>
+
+            <div class="user-info-section">
+
+                <div>
+                    <img class="profile-img" id="profile-img" src="" height="120px" width="100px" alt="not available">
+                </div>
+
+                <div class="user-info-display">
+                <div class="nameanddatesection">
+                    <div class="name-section">
+                        <h1 class="user-name"></h1> 
+                        <a username-link href="" style="color: blue;" target="_blank"></a>
+                        <p user-bio></p>
+                    </div>
+                    <div class="date-section">
+                        <p class="joined-date"></p>  
+                    </div>
+                </div>
+                    
+                    <div class="github-info">
+
+                        <div class="repo">
+                            <p>Repos</p>
+                            <p class="count-info" repo-info></p>
+                        </div>
+
+                        <div class="followers">
+                            <p>Followers</p>
+                            <p class="count-info" followers-info></p>
+                        </div>
+
+                        <div class="following">
+                            <p>Following</p>
+                            <p class="count-info" following-info></p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="social-media-info">
+                            <!-- <div><div class="bottom-icons"><p>Kolkata, India</p><img src="./assets/images/location-icon.svg" alt=""></div></div>
+                            <div></div><div class="bottom-icons"><p>pranaygupta@gmail.com</p><img src="./assets/images/website-icon.svg" alt=""></div></div>
+                            <div></div><div class="bottom-icons"><p>pranaygupta</p><img src="./assets/images/twitter-icon.svg" alt=""></div></div>
+                            <div></div><div class="bottom-icons"><p>@targettechnologies</p><img src="./assets/images/company-icon.svg" alt=""></div></div> -->
+
+                            <div class="social">
+                                <img src="./assets/images/location-icon.svg" alt="">
+                                <p class="location"></p>
+                            </div>
+
+                            <div class="social">
+                                <img src="./assets/images/website-icon.svg" alt="">
+                                <p class="website-info"></p>
+                            </div>
+
+                            <div class="social">
+                                <img src="./assets/images/twitter-icon.svg" alt="">
+                                <p class="twitter-info"></p>
+                            </div>
+
+                            <div class="social">
+                                <img src="./assets/images/company-icon.svg" alt="">
+                                <p class="company-info"></p>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script async src="scripts.js"></script>
+</body>
+</html>
