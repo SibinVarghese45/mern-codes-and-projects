@@ -1,0 +1,84 @@
+import React from "react";
+import { useState, useEffect } from "react";
+
+const App = () => {
+  
+  const [text, settext] = useState("");
+  let name = "";
+
+  // variation 1 -> Will render on every render
+  // useEffect(() => {
+  //   console.log("UI rendering done")
+  // })
+
+  //variation2 -> first render
+  // useEffect(() => {
+  //   console.log("UI Updation done")
+  // }, [])
+
+  // variation3 -> first render + whenever dependency change
+  // useEffect(() => {
+  //   console.log('changes done')
+  // }, [text])
+
+  //variation 4 -> to handle unmounting of a component
+  useEffect(() => {
+    console.log('Added Listeners')
+    return () => {
+      console.log("Removed Listeners")
+    }
+  }, [text])
+
+
+
+  function handleChange(event){
+    let updatedText = event.target.value;
+    settext(updatedText);
+
+  }
+
+  return(
+    <div>
+      <label>Enter Details: </label>
+      <input type="text" onChange={handleChange} ></input>
+    </div>
+  )
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+ const [size, setsize] = useState(window.innerWidth);
+
+  // window.addEventListener('resize', () => {
+  //   setsize(window.innerWidth);
+  // })
+
+  useEffect(() => {
+
+    const handleSizing = () => {
+      setsize(window.innerWidth);
+    }
+
+    window.addEventListener('resize',handleSizing)
+
+    return () => {
+      window.removeEventListener('resize', handleSizing);
+    }
+  })
+  
+  return(
+    <div>
+      Window Current size is {size}
+    </div>
+  )

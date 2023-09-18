@@ -1,0 +1,21 @@
+{
+  "name": "codehelp-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.1.0",
+    "postcss-cli": "^10.1.0",
+    "vite": "^4.4.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

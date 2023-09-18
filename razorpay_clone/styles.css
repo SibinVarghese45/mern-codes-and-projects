@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 125px;
+    height: 30px;
+}
+
+.nav-container{
+    position: relative;
+    width: 100vw;
+    background-color: #02042a;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.nav-child{
+    width: 1416px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-contents{
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+    font-family: "Mulish";
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+a{
+    text-decoration: none;
+}
+.nav-cont{
+    color: white;
+}
+
+.country-flag{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#arrow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: 1rem;
+    left: 5rem;
+}
+
+#login{
+    padding: 15px;
+    background-color: #02042a;
+    color: white;
+    margin-left: 30px;
+    border: 1px solid blue;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#signup{
+    position: relative;
+    padding: 15px;
+    padding-right: 55px;
+    margin-left: 30px;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.items-section{
+    position: relative;
+    height: 100%;
+}
+
+.nav-cont-line{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: blue;
+    margin-top: 15px;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.items-section:hover .nav-cont-line{
+    opacity: 1;
+}
+
+.items-section:hover .nav-cont{
+    color: blue;
+}
+
+#signup:hover {
+    color: #02042a;
+}
+
