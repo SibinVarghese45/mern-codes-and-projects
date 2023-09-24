@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid #D3D3D3;
+}
+
+.innercircle{
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.child{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    animation: circle1 30s infinite linear;
+    transform-origin: top;
+    
+}
+
+.child1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    transform-origin: bottom;
+    animation: circle2 30s infinite linear;
+    animation-delay: -24s;
+}
+
+.child2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    transform-origin: bottom;
+    animation: circle2 30s infinite linear;
+    animation-delay: -18s;
+}
+
+.child3{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 50%;
+        text-align: center;
+        top: 40%;
+        left: 40%;
+        transform-origin: bottom;
+        animation: circle2 30s infinite linear;
+        animation-delay: -12s;
+    
+}
+
+.child4{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 50%;
+        text-align: center;
+        top: 40%;
+        left: 40%;
+        transform-origin: bottom;
+        animation: circle2 30s infinite linear;
+        animation-delay: -6s;
+    
+}
+
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0deg) 
+              translateY(150px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+              translateY(150px) rotate(-360deg);
+    }
+}
+
+
+
+@keyframes circle1{
+    0% {
+        transform: rotate(0deg) 
+              translateY(150px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+              translateY(150px) rotate(-360deg);
+    }
+}
